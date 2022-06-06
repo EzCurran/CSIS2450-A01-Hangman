@@ -26,6 +26,10 @@
 </head>
 <body>
     <h1>Hangman</h1>
+    <input id="inputWord" placeholder="Enter a word">
+    <button type="button" onclick = "submitWord()" id = "submitWord">Submit Word</button>
+    <input id="inputLetter" placeholder="Enter Guess" onkeydown="limit(this);" onkeyup="limit(this);">
+    <button type="button" onclick="submitLetter()" id="submitLetter">Submit Guess</button>
     <canvas id = "gameArea" width="800" height="800"></canvas>
     <script src="main.js"></script>
 </body>
